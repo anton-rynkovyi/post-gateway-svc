@@ -22,4 +22,9 @@ public class PostController {
     public Flux<MastodonPost> streamPosts() {
         return postService.streamPosts();
     }
+
+    @GetMapping(value = "/hello")
+    public String hello() {
+        return "Hello Anton";
+    }
 }

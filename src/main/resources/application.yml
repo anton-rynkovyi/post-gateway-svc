@@ -1,9 +1,10 @@
 server:
-  port: 8081
+  port: 8080
+  address: 0.0.0.0
 
 spring:
   kafka:
-    bootstrap-servers: localhost:29092
+    bootstrap-servers: kafka:9092
     consumer:
       group-id: post-gateway-cg
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
